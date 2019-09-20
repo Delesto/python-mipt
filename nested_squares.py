@@ -23,7 +23,7 @@ def rotate(angle, padding):
     turtle.right(angle)
     turtle.pendown()
 
-def draw(angle, step, padding, nesting):
+def nested_squares(angle, step, padding, nesting):
     i = 0
     while i < nesting:
         draw_square(90, step)
@@ -31,6 +31,6 @@ def draw(angle, step, padding, nesting):
         step += padding * 2
         i += 1
         
-draw(90, 50, 10, 5)
+nested_squares(90, 50, 10, 5)
 
 screen.mainloop()
